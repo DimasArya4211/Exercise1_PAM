@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.exercise_1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Todo App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Exe1_PAM">
+        <activity
+            android:name="com.example.exe1_pam.ActivityDuo"
+            android:parentActivityName="com.example.exe1_pam.MainActivity" />
+        <activity
+            android:name="com.example.exe1_pam.ResultActivity"
+            android:label="Result_Activity"
+            android:parentActivityName="com.example.exe1_pam.ActivityDuo" />
+        <activity
+            android:name="com.example.exe1_pam.Register"
+            android:label="@string/Register"
+            android:parentActivityName="com.example.exe1_pam.MainActivity" />
+        <activity
+            android:name="com.example.exe1_pam.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
